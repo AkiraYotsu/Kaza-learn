@@ -14,13 +14,14 @@
 	<main>
 	  <div class="limit">
 	    <hr>
-	  <h2>1. HTML</h2>
+	  <button id="showallcode" onclick="tgcodeall();">Lihat semua kode</button>
+	  <h2><img id="htmllogo" src="image/html.jpeg" width="25" alt="Htlml logo">1. HTML</h2>
 	  <h3>1. Belajar tentang tag dan attribute</h3>
 	  <p>Disini aku mempelajari bahwa HTML memiliki struktur dasar yang terdiri <em>tag</em> dan <em>attribute</em>,
 	    tag sendiri merupakan penanda utama dalam web untuk
 	    memberitahu browser bagian pada halaman sementara attribute adalah informasi tambahan pada tag
 	  </p>
-	  <h3>1. Belajar tentang head dan body</h3>
+	  <h3>2. Belajar tentang head dan body</h3>
 	  <p>Disini aku mempelajari bahwa ada yang namanya <em>head</em> sebagai kepala dan info tidak terlihat untuk web, <em>body</em> yang menjadi isi dari web dan <em>tag</em> yang merupakan fungsi perintah dan cara mengaplikasikannya di index pada HTML. Selain itu aku belajar bahwa setiap halaman web biasanya punya judul, bab, dan subbab yang diaplikasikan pada jenis <em>heading tag</em> yaitu:
 	  </p>
 	  <ol>
@@ -31,7 +32,7 @@
 	    <li><em>h5</em> = Detail kecil</li>
 	    <li><em>h6</em> = Catatan super kecil</li>
 	  </ol>
-	  <h3>2. Belajar tentang penyusunan kata, kalimat dan paragraf</h3>
+	  <h3>3. Belajar tentang penyusunan kata, kalimat dan paragraf</h3>
 	  <p>Disini aku mempelajari berbagai tag seperti <em>br</em> dan <em>p</em>, teks penting, menambah dan mengatur scale gambar, melakukan listing, pemakaian tabel dan struktur web.
 	  </p>
 	  <h4>1.Penggunaan br dan p</h4>
@@ -45,9 +46,15 @@
 	  <p>Aku belajar tentang bagaimana membuat penekanan dan penjelasan terhadap teks atau kata yang diinginkan dengan melakukan bold dan italic pada bagian yang diinginkan dengan menggunakan tag <em>strong</em> sebagai bold dan tag <em>em</em> sebagai italic.<br>
 	    <em>contoh:</em>
 	  </p>
-	  <p><strong>Ini Bold memakai tag strong</strong><br>
+	  <p><strong>Ini bold memakai tag strong</strong><br>
 	    <em>Ini italic memakai tag em</em>
 	  </p>
+	  <button id="btncodeembr" onclick="tgcodeembr()">Lihat kode</button>
+	  <pre class="semuakode" id="kodebiteks" style="display: none;">
+	    <code>&lt;p&gt;&lt;strong&gt;Ini bold memakai tag strong&lt;/strong&gt;&lt;br&gt;<br>
+	    &lt;em&gt;Ini italic memakai tag em&lt;/em&gt;&lt;/p&gt;
+	    </code>
+	  </pre>
 	  <h4>3.Figure</h4>
 	  <p>Aku mempelajari bagaimana cara
 	    
@@ -57,9 +64,13 @@
 	    <em>contoh:</em>
 	  </p>
 	  <figure>
-	    <img src="image/tester.jpeg" width="300" alt="Gambar test">
+	    <img src="image/tester.jpeg" width="300" alt="contoh gambar">
 	    <figcaption><em>Ini adalah contoh gambar yang menggunakan scale 300</em></figcaption>
 	  </figure>
+    <button id="btncodepict" onclick="tgcodepict()">Lihat Kode</button>
+    <pre class=semuakode id="kodegambar" style="display: none;">
+    <code>&lt;img src="image/tester.jpeg" width="300" alt="contoh gambar"&gt;</code>
+    </pre>
 	  <h4>5.List</h4>
 	  <p>Aku belajar bahwa kita bisa melakukan list dengan simpel dan mudah menggunakan tag <em>ul</em> sebagai list titik dan tag <em>ol</em> sebagai list angka.<br>
 	    <em>contoh:</em>
@@ -101,7 +112,7 @@
 	  <p>Aku belajar bahwa kita bisa mengatur struktur web dengan menggunakan tag header, main, dan footer untuk membuat web menjadi lebih terstruktur dan rapi sehingga browser bisa membaca web kita lebih baik. Untuk contoh penerapan tidak terlihat dan telah diaplikasikan pada web ini.
 	  </p>
 
-    <h2>2. CSS</h2>
+    <h2><img id="csslogo" src="image/css.jpeg" width="30" alt="Css logo">2. CSS</h2>
     <h3>1. Struktur dasar</h3>
     <h4>1.Bentuk perintah CSS</h4>
     <p>Aku mempelajari bahwa CSS itu terdiri dari selector, kurung kurawal, property dan value yang merupakan cara menjalankan perintah paling dasar di CSS.
